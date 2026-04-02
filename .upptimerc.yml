@@ -4,15 +4,21 @@ repo: uptime-checker # The name of this repository
 
 sites:
   - name: UEM Main Website
-    url: https://uem.edu.in/
+    url: https://uem.edu.in/site-health-page/
   - name: IEM Main Website
-    url: https://iem.edu.in/
+    url: https://iem.edu.in/robots.txt
     headers:
       - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
   - name: UEM Jaipur Website
     url: https://uem.edu.in/uem-jaipur/
   - name: UEM Kolkata Website
     url: https://uem.edu.in/uem-kolkata/
+  - name: UEM Staging Main Website
+    url: https://staging.uem.edu.in/site-health-page/
+  - name: UEM Staging Jaipur Website
+    url: https://staging.uem.edu.in/uem-jaipur/
+  - name: UEM Staging Kolkata Website
+    url: https://staging.uem.edu.in/uem-kolkata/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
