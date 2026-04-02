@@ -15,7 +15,7 @@ sites:
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: status.uem.edu.in
+  cname: status.uem.edu.in
   # baseUrl: /your-repo-name
   logoUrl: https://uem.edu.in/app/themes/iem-group-new-wp-theme/resources/images/UEM-Logo.avif
   name: IEM/UEM
