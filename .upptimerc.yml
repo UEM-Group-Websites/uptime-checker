@@ -19,7 +19,7 @@ status-website:
   # baseUrl: /your-repo-name
   logoUrl: https://uem.edu.in/app/themes/iem-group-new-wp-theme/resources/images/UEM-Logo.avif
   name: IEM/UEM
-  introTitle: "The IEM UEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today."
+  introTitle: "IEM/UEM Group Uptime Status"
   introMessage: The IEM UEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the technical and managerial resource shortage in the new era of dynamic globalisation.
   navbar:
     - title: Status
