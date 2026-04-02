@@ -1,36 +1,31 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: UEM-Group-Websites # Your GitHub organization or username, where this repository lives
+repo: uptime-checker # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: UEM Main Website
+    url: https://uem.edu.in/
+  - name: IEM Main Website
+    url: https://iem.edu.in/
+  - name: UEM Jaipur Website
+    url: https://uem.edu.in/uem-jaipur/
+  - name: UEM Kolkata Website
+    url: https://uem.edu.in/uem-kolkata/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
+  cname: status.uem.edu.in
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  logoUrl: https://uem.edu.in/app/themes/iem-group-new-wp-theme/resources/images/UEM-Logo.avif
+  name: IEM/UEM
+  introTitle: "The IEM UEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today."
+  introMessage: The IEM UEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the technical and managerial resource shortage in the new era of dynamic globalisation.
   navbar:
     - title: Status
       href: /
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+      href: https://github.com/UEM-Group-Websites/uptime-checker
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
