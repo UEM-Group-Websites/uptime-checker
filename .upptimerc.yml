@@ -6,19 +6,19 @@ sites:
   - name: UEM Main Website
     url: https://uem.edu.in/site-health-page/
   - name: IEM Main Website
-    url: https://iem.edu.in/robots.txt
+    url: https://iem.edu.in/site-health-page/
     headers:
       - "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
   - name: UEM Jaipur Website
-    url: https://uem.edu.in/uem-jaipur/
+    url: https://uem.edu.in/uem-jaipur/site-health-page/
   - name: UEM Kolkata Website
-    url: https://uem.edu.in/uem-kolkata/
+    url: https://uem.edu.in/uem-kolkata/site-health-page/
   - name: UEM Staging Main Website
     url: https://staging.uem.edu.in/site-health-page/
   - name: UEM Staging Jaipur Website
-    url: https://staging.uem.edu.in/uem-jaipur/
+    url: https://staging.uem.edu.in/uem-jaipur/site-health-page/
   - name: UEM Staging Kolkata Website
-    url: https://staging.uem.edu.in/uem-kolkata/
+    url: https://staging.uem.edu.in/uem-kolkata/site-health-page/
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
