@@ -2,6 +2,11 @@
 owner: UEM-Group-Websites # Your GitHub organization or username, where this repository lives
 repo: uptime-checker # The name of this repository
 
+site:
+  metaTags:
+    - name: robots
+      content: noindex, nofollow
+
 sites:
   - name: UEM Main Website
     url: https://uem.edu.in/site-health-page/
