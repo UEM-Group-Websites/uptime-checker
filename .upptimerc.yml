@@ -7,6 +7,8 @@ sites:
     url: https://uem.edu.in/site-health-page/
   - name: IEM Main Website
     url: https://iem.edu.in/site-health-page/
+    header:
+      User-Agent: "github.com/uptime/uptime-monitor"
   - name: UEM Jaipur Website
     url: https://uem.edu.in/uem-jaipur/site-health-page/
   - name: UEM Kolkata Website
