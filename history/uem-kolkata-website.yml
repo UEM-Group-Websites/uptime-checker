@@ -1,7 +1,7 @@
 url: https://uem.edu.in/uem-kolkata/site-health-page/
-status: up
-code: 200
-responseTime: 4054
-lastUpdated: 2026-07-16T23:52:45.319Z
+status: down
+code: 504
+responseTime: 10303
+lastUpdated: 2026-07-18T00:02:15.710Z
 startTime: 2026-04-02T07:57:04.722Z
 generator: Upptime <https://github.com/upptime/upptime>
