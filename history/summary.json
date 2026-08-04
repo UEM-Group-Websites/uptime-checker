@@ -27,17 +27,17 @@
     "url": "https://iem.edu.in/site-health-page/",
     "icon": "https://icons.duckduckgo.com/ip3/iem.edu.in.ico",
     "slug": "iem-main-website",
-    "status": "down",
-    "uptime": "96.04%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "96.04%",
-    "time": 1615,
-    "timeDay": 6184,
-    "timeWeek": 3049,
-    "timeMonth": 2111,
-    "timeYear": 1615,
+    "status": "up",
+    "uptime": "95.99%",
+    "uptimeDay": "93.75%",
+    "uptimeWeek": "99.11%",
+    "uptimeMonth": "99.79%",
+    "uptimeYear": "95.99%",
+    "time": 1623,
+    "timeDay": 5033,
+    "timeWeek": 3014,
+    "timeMonth": 2130,
+    "timeYear": 1623,
     "dailyMinutesDown": {
       "2026-04-02": 64,
       "2026-04-06": 406,
@@ -48,7 +48,7 @@
       "2026-04-09": 1440,
       "2026-04-08": 756,
       "2026-06-18": 171,
-      "2026-08-04": 0
+      "2026-08-04": 90
     }
   },
   {
