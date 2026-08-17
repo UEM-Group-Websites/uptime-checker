@@ -1,7 +1,7 @@
 url: https://iem.edu.in/site-health-page/
-status: up
-code: 200
-responseTime: 11334
-lastUpdated: 2026-08-17T15:01:06.873Z
+status: down
+code: 520
+responseTime: 51610
+lastUpdated: 2026-08-17T15:36:50.627Z
 startTime: 2026-04-02T07:57:02.521Z
 generator: Upptime <https://github.com/upptime/upptime>
