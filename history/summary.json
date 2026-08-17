@@ -29,15 +29,15 @@
     "slug": "iem-main-website",
     "status": "down",
     "uptime": "96.36%",
-    "uptimeDay": "99.26%",
-    "uptimeWeek": "99.89%",
+    "uptimeDay": "99.14%",
+    "uptimeWeek": "99.88%",
     "uptimeMonth": "99.77%",
     "uptimeYear": "96.36%",
-    "time": 1969,
-    "timeDay": 28201,
-    "timeWeek": 8344,
-    "timeMonth": 3645,
-    "timeYear": 1969,
+    "time": 2340,
+    "timeDay": 29836,
+    "timeWeek": 12969,
+    "timeMonth": 5191,
+    "timeYear": 2340,
     "dailyMinutesDown": {
       "2026-04-02": 64,
       "2026-04-06": 406,
@@ -49,7 +49,7 @@
       "2026-04-08": 756,
       "2026-06-18": 171,
       "2026-08-04": 90,
-      "2026-08-17": 11
+      "2026-08-17": 12
     }
   },
   {
