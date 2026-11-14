@@ -2,6 +2,8 @@
 
 Thanks for helping out. This repo runs the [IEM-UEM Group status page](https://status.uem.edu.in) on [Upptime](https://upptime.js.org). GitHub Actions check each site every five minutes, issues act as incident reports, and GitHub Pages hosts the status page.
 
+Everyone taking part is expected to follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
 ## Reporting problems
 
 Pick the right form under [New issue](https://github.com/UEM-Group-Websites/uptime-checker/issues/new/choose):
