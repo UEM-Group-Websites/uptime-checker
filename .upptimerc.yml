@@ -41,10 +41,16 @@ status-website:
   links:
     - rel: stylesheet
       href: https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&display=swap
+  # Light/dark mode: apply a saved choice before first paint (no flash), then
+  # load the header switch. Absolute URL so the export crawler skips it.
+  js: 'try{var t=localStorage.getItem("uem-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}'
+  scripts:
+    - src: https://status.uem.edu.in/uem-theme.js
+      async: true
   navbar:
     - title: Status
       href: /
-    - title: uem.edu.in
+    - title: UEM Website
       href: https://uem.edu.in
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
