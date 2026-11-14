@@ -9,3 +9,17 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    # Upptime regenerates every file in .github/workflows from its template
+    # (daily via "Update Template CI", and on each .upptimerc.yml push via
+    # "Setup CI"). The template hard-codes these action versions and
+    # .upptimerc.yml has no setting to change them, so any bump Dependabot
+    # makes here is reverted within a day. Upptime bumps them itself in new
+    # releases. Keep this list in sync with the `uses:` lines in the generated
+    # workflows. Actions in workflows you add yourself still get updates.
+    ignore:
+      - dependency-name: "actions/checkout"
+      - dependency-name: "actions/create-github-app-token"
+      - dependency-name: "actions/setup-node"
+      - dependency-name: "benc-uk/workflow-dispatch"
+      - dependency-name: "peaceiris/actions-gh-pages"
+      - dependency-name: "upptime/*"
