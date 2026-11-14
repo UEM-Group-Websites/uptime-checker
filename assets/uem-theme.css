@@ -1,0 +1,166 @@
+/*
+ * UEM theme for status.uem.edu.in
+ *
+ * Matches the look of https://uem.edu.in (navy + yellow, IBM Plex Sans / Serif).
+ * Loaded through `status-website.themeUrl` in .upptimerc.yml. Files in /assets
+ * are copied into every site build, so this survives Upptime rebuilds.
+ */
+
+:root {
+  --uem-navy: #21397d;
+  --uem-navy-dark: #182a5c;
+  --uem-yellow: #f9c41a;
+  --uem-text: #1e293b;
+  --uem-muted: #475569;
+  --uem-border: #e2e8f0;
+  --uem-bg: #f8fafc;
+
+  --body-background-color: var(--uem-bg);
+  --body-text-color: var(--uem-text);
+  --card-background-color: #ffffff;
+  --card-border-color: var(--uem-border);
+  --nav-background-color: var(--uem-navy);
+  --nav-border-bottom-color: var(--uem-yellow);
+  --nav-current-border-bottom-color: var(--uem-yellow);
+  --code-color: var(--uem-navy);
+  --code-background-color: #eef2fb;
+
+  --up-border-left-color: #16a34a;
+  --degraded-border-left-color: var(--uem-yellow);
+  --down-border-left-color: #dc2626;
+  --down-background-color: #fef2f2;
+  --tag-color: #ffffff;
+  --tag-up-background-color: #16a34a;
+  --tag-degraded-background-color: #b45309;
+  --tag-down-background-color: #dc2626;
+  --change-background-color: var(--uem-yellow);
+
+  --error-button-border-color: var(--uem-navy);
+  --error-button-background-color: var(--uem-navy);
+  --error-button-color: #ffffff;
+  --submit-button-border-color: var(--uem-yellow);
+  --submit-button-background-color: var(--uem-yellow);
+  --submit-button-color: var(--uem-navy);
+
+  /* Shifts Upptime's teal graphs towards UEM blue */
+  --uem-graph-filter: hue-rotate(55deg) saturate(1.3) brightness(0.85) opacity(0.55);
+}
+
+/* Typography */
+html body {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+html body h1,
+html body h2 {
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-weight: 600;
+  color: var(--uem-navy);
+}
+html body h3 {
+  color: var(--uem-muted);
+  opacity: 1;
+}
+html body h4 {
+  color: var(--uem-text);
+  font-weight: 600;
+}
+main a:hover {
+  color: var(--uem-navy);
+}
+
+/* Header: navy bar with a yellow rule, like uem.edu.in */
+html body nav {
+  border-bottom: 2px solid var(--uem-yellow);
+  font-weight: 500;
+}
+html body nav,
+html body nav a {
+  color: #ffffff;
+}
+html body nav a:hover {
+  color: var(--uem-yellow);
+}
+html body nav .logo img {
+  height: 3.25rem;
+  border-radius: 0;
+}
+html body nav .logo div {
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+html body nav [aria-current] {
+  color: var(--uem-yellow);
+  border-bottom-width: 3px;
+}
+
+/* Cards */
+html body article {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+}
+html body article.down,
+html body article.degraded,
+html body article.up {
+  border-left-width: 4px;
+}
+html body article.link:hover {
+  box-shadow: 0 4px 12px rgba(33, 57, 125, 0.12);
+}
+/* Response-time graphs are teal PNGs set as the card background. Redraw them
+   on a pseudo-element so a filter can recolour them without touching the text. */
+html body article.graph {
+  background-image: none !important;
+  isolation: isolate;
+}
+html body article.graph::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-image: var(--background);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
+  filter: var(--uem-graph-filter);
+  pointer-events: none;
+}
+
+/* Tags as pills, like the badges on uem.edu.in */
+html body .tag {
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Buttons */
+html body a.error-button,
+html body .submit-button {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Footer */
+html body footer {
+  color: var(--uem-muted);
+  opacity: 1;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  html body nav .logo div {
+    display: none;
+  }
+  html body nav .logo {
+    margin-right: 0.5rem !important;
+  }
+  html body nav ul a {
+    padding: 1.5rem 0.75rem !important;
+    font-size: 0.9rem;
+  }
+  html body nav .logo img {
+    height: 2.5rem;
+  }
+}

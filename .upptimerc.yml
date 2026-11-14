@@ -28,18 +28,32 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.uem.edu.in
   # baseUrl: /your-repo-name
-  logoUrl: https://uem.edu.in/app/themes/iem-group-new-wp-theme/resources/images/UEM-Logo.avif
-  name: IEM/UEM
-  introTitle: "IEM/UEM Group Uptime Status"
-  introMessage: The IEM UEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the technical and managerial resource shortage in the new era of dynamic globalisation.
+  # Theme, logo and fonts match uem.edu.in. The CSS and images live in /assets,
+  # which Upptime copies into every build, so they survive automatic deploys.
+  logoUrl: https://status.uem.edu.in/uem-logo.webp
+  logoHref: /
+  favicon: https://status.uem.edu.in/uem-favicon.webp
+  faviconSvg: https://status.uem.edu.in/uem-favicon.webp
+  themeUrl: https://status.uem.edu.in/uem-theme.css
+  name: IEM-UEM Group Status
+  introTitle: IEM-UEM Group Website Status
+  introMessage: Live availability and response times for IEM-UEM Group websites. Each site is checked every five minutes. When a site goes down, an incident opens automatically and closes once the site recovers.
+  links:
+    - rel: stylesheet
+      href: https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600;700&display=swap
   navbar:
     - title: Status
       href: /
+    - title: uem.edu.in
+      href: https://uem.edu.in
     - title: GitHub
-      href: https://github.com/UEM-Group-Websites/uptime-checker
+      href: https://github.com/$OWNER/$REPO
+  # Keep the status page out of search engines (see also assets/robots.txt)
   metaTags:
     - name: robots
-      content: noindex, nofollow
+      content: noindex, nofollow, noarchive, nosnippet, noimageindex
+    - name: googlebot
+      content: noindex, nofollow, noarchive, nosnippet, noimageindex
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
