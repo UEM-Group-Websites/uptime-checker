@@ -1,0 +1,16 @@
+---
+# Upptime regenerates these workflows from its template (daily via
+# "Update Template CI", and on each .upptimerc.yml push via "Setup CI").
+# Any edit here, such as pinning actions to commit SHAs, is reverted, so
+# Codacy findings on them can't be fixed in this repo. Workflows you add
+# yourself are not listed and still get analyzed. Keep this list in sync
+# with the files Upptime generates.
+exclude_paths:
+  - ".github/workflows/graphs.yml"
+  - ".github/workflows/response-time.yml"
+  - ".github/workflows/setup.yml"
+  - ".github/workflows/site.yml"
+  - ".github/workflows/summary.yml"
+  - ".github/workflows/update-template.yml"
+  - ".github/workflows/updates.yml"
+  - ".github/workflows/uptime.yml"
