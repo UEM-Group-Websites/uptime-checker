@@ -39,39 +39,40 @@
   // Icons are built with DOM calls rather than innerHTML.
   var SVG_NS = "http://www.w3.org/2000/svg";
 
+  // attrs is a list of [name, value] pairs
   function svgEl(tag, attrs) {
     var el = document.createElementNS(SVG_NS, tag);
-    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    attrs.forEach(function (pair) {
+      el.setAttribute(pair[0], pair[1]);
+    });
     return el;
   }
 
   function sunIcon() {
-    var svg = svgEl("svg", {
-      class: "uem-sun",
-      viewBox: "0 0 24 24",
-      fill: "none",
-      stroke: "currentColor",
-      "stroke-width": "2.5",
-      "stroke-linecap": "round",
-      "aria-hidden": "true"
-    });
-    svg.appendChild(svgEl("circle", { cx: "12", cy: "12", r: "4" }));
+    var svg = svgEl("svg", [
+      ["class", "uem-sun"],
+      ["viewBox", "0 0 24 24"],
+      ["fill", "none"],
+      ["stroke", "currentColor"],
+      ["stroke-width", "2.5"],
+      ["stroke-linecap", "round"],
+      ["aria-hidden", "true"]
+    ]);
+    svg.appendChild(svgEl("circle", [["cx", "12"], ["cy", "12"], ["r", "4"]]));
     svg.appendChild(
-      svgEl("path", {
-        d: "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
-      })
+      svgEl("path", [["d", "M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"]])
     );
     return svg;
   }
 
   function moonIcon() {
-    var svg = svgEl("svg", {
-      class: "uem-moon",
-      viewBox: "0 0 24 24",
-      fill: "currentColor",
-      "aria-hidden": "true"
-    });
-    svg.appendChild(svgEl("path", { d: "M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" }));
+    var svg = svgEl("svg", [
+      ["class", "uem-moon"],
+      ["viewBox", "0 0 24 24"],
+      ["fill", "currentColor"],
+      ["aria-hidden", "true"]
+    ]);
+    svg.appendChild(svgEl("path", [["d", "M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"]]));
     return svg;
   }
 
