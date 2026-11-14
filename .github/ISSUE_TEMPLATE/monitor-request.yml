@@ -1,0 +1,36 @@
+name: Monitor request
+description: Add, change or remove a site the status page checks
+title: "[Monitor] "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: action
+    attributes:
+      label: Request
+      options:
+        - Add a new site
+        - Change an existing site
+        - Remove a site
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Site name
+      description: As it should appear on the status page.
+      placeholder: e.g. UEM Admissions Portal
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL to check
+      description: Prefer a light health-check page, like the existing /site-health-page/ URLs.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Why it's needed, expected status code, custom headers, owner contact, or anything else.

@@ -1,0 +1,54 @@
+name: Site problem
+description: A monitored site is down, slow or broken, but the status page doesn't show it
+title: "[Site] "
+labels: ["site-issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Upptime checks each site every five minutes and opens an incident on its own when a site goes down. Check [open incidents](https://github.com/UEM-Group-Websites/uptime-checker/issues?q=is%3Aissue+is%3Aopen+label%3Astatus) first so we don't get a duplicate.
+  - type: dropdown
+    id: site
+    attributes:
+      label: Site
+      options:
+        - UEM Main Website
+        - IEM Main Website
+        - UEM Jaipur Website
+        - UEM Kolkata Website
+        - UEM Staging Main Website
+        - UEM Staging Jaipur Website
+        - UEM Staging Kolkata Website
+        - Other / not monitored yet
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: The exact page where you saw the problem.
+      placeholder: https://uem.edu.in/...
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What's wrong?
+      options:
+        - Site is down or shows an error
+        - Site is very slow
+        - Page loads but content is broken
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What did you see, and when? Add error messages or screenshots if you have them.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Your network or location
+      description: Optional. Helps us tell a local network issue from a real outage.
+      placeholder: e.g. campus Wi-Fi, Jio mobile data, Kolkata
