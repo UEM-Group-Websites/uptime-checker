@@ -1,0 +1,52 @@
+name: Status page bug
+description: Wrong data, broken layout or a failing workflow on status.uem.edu.in
+title: "[Status page] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Status page (status.uem.edu.in)
+        - Uptime or response-time data
+        - Incident opened or closed wrongly
+        - GitHub Actions workflow
+        - README summary or graphs
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: A page URL, workflow run or commit that shows the problem.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: e.g. Chrome 130 on Windows 11, Safari on iPhone 15
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or other context
